@@ -248,11 +248,11 @@ const INITIAL_STATE = {
   ],
 };
 
-const shopDataReducer = (state = INITIAL_STATE, action) => {
+const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     default:
       return state;
   }
 };
 
-export default shopDataReducer;
+export default shopReducer;

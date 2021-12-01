@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 import "./menu-item.styles.scss";
 
-function MenuItem({ title, imageUrl, size }) {
+function MenuItem({ title, imageUrl, size, linkUrl }) {
   return (
-    <Link className={`${size} menu-item`} to={title}>
+    <Link className={`${size} menu-item`} to={linkUrl}>
       <div
         className="background-image"
         style={{ backgroundImage: `url(${imageUrl})` }}
