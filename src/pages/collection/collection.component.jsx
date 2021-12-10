@@ -10,9 +10,11 @@ import "./collection.styles.scss";
 import { useParams } from "react-router";
 
 function CollectionPage() {
-  const { category } = useParams();
+  const { collectionParam } = useParams();
 
-  const collection = useSelector((state) => selectCollection(category)(state));
+  const collection = useSelector((state) =>
+    selectCollection(collectionParam)(state)
+  );
 
   const { title, items } = collection;
 

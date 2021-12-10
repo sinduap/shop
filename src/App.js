@@ -52,7 +52,7 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/shop" element={<ShopPage />} />
-          <Route path="/shop/:category" element={<CollectionPage />} />
+          <Route path="/shop/:collectionParam" element={<CollectionPage />} />
           {currentUser ? (
             <Route path="/signin" element={<Navigate to="/" />} />
           ) : (

@@ -25,7 +25,19 @@
 
   .total {
     margin-top: 30px;
-    margin-left: auto;
+    margin-bottom: 30px;
     font-size: 36px;
+    display: flex;
+    justify-content: space-around;
+
+    .total-price {
+      margin-right: 30px;
+    }
+  }
+
+  .test-warning {
+    text-align: center;
+    font-size: 24px;
+    color: red;
   }
 }
